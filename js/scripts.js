@@ -23,9 +23,6 @@ var userOutput = function(countUp) {
 
 $(document).ready(function() {
   $("#userInput").submit(function(event) {
-    if ($("#userInput").val() == "") {
-      alert("Please enter a number and try again!");
-    }
     var countUp = $("#userNumber").val();
     var output = userOutput(countUp);
 

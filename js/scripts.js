@@ -1,6 +1,6 @@
-var userOutput = funtion(x) {
+var userOutput = function(countUp) {
   var text = "";
-  for (var i = 1; i <= x; i++) {
+  for (var i = 1; i <= countUp; i++) {
     if (i % 15 === 0) {
       text += "pingpong <br>";
     }
@@ -22,13 +22,11 @@ var userOutput = funtion(x) {
 
 
 $(document).ready(function() {
-  $("form#userInput").submit(function(event) {
-    var x = $("input#userNumber").val();
-    var output = userOutput(x);
+  $("#userInput").submit(function(event) {
+    var countUp = $("#userNumber").val();
+    var output = userOutput(countUp);
 
-    $(".resultNumbers").html(output);
-
-    $("#resultDiv").show();
+    $("#resultNumbers").html(output);
 
     event.preventDefault();
   });

@@ -1,3 +1,26 @@
+body {
+  font-family: fantasy;
+  background-color: #81d09e;
+}
+
+button {
+  background-color: #2d9c56;
+}
+
+ul {
+  list-style-image: url(pingpong.png);
+}
+
+input {
+  border-radius: 4px;
+  height: 34px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+#resultStyle {
+  padding: 5%;
+}
 
 #wrapper {
   padding-left: 250px;
@@ -8,7 +31,7 @@
   margin-left: -250px;
   left: 250px;
   width: 250px;
-  background: blue;
+  background: #2d9c56;
   position: fixed;
   height: 100%;
   overflow-y: auto;

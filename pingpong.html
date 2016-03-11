@@ -13,10 +13,10 @@
       <div id="sidebar-wrapper">
         <div class="sidebar-nav">
           <h1>Let's Play Ping-Pong!</h1>
-          <h3>Learn the Rules</h3>
+          <h3><u>Learn the Rules</u></h3>
           <p>Ping-Pong will count up to your number from 1 with the following exceptions:</p>
           <ul>
-            <li>Numbers divisible by become "ping"</li>
+            <li>Numbers divisible by 3 become "ping"</li>
             <li>Numbers divisible by 5 become "pong"</li>
             <li>Numbers divisible by 15 become "pingpong"</li>
           </ul>
@@ -29,11 +29,11 @@
               <div class="col-md-12">
                 <form id="userInput">
                   <label for="userNumber">Enter your number here:</label>
-                  <input id="userNumber" type="number">
-                  <button type="submit">Ping-Pong!</button>
+                  <input id="userNumber" type="text">
+                  <button class="btn" type="submit">Ping-Pong!</button>
                 </form>
 
-                <p><span id="resultNumbers"></span></p>
+                <p id="resultStyle"><span id="resultNumbers"></span></p>
               </div>
             </div>
           </div>
